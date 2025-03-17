@@ -1,0 +1,175 @@
+.modal-window {
+  max-width: 792px;
+  min-height: 613px;
+  position: absolute;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25);
+  background: rgb(242, 240, 249);
+  z-index: 3;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 35px 106px;
+  /* display: none; */
+}
+
+.close {
+  background-image: url(../img/close.svg);
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+.header-modal__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 21px;
+}
+
+.header-modal__title {
+  color: rgb(110, 104, 147);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 10%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.header-modal__id {
+  color: rgb(197, 197, 197);
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 12px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.main-modal {
+  max-width: 580px;
+  min-height: 403px;
+  padding: 28px;
+  margin-top: 21px;
+  margin-bottom: 28px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
+  background: rgb(255, 255, 255);
+}
+
+.main-modal__form {
+  max-width: 524px;
+  min-height: 347px;
+  position: relative;
+}
+
+.main-modal__label {
+  color: rgb(110, 104, 147);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 15px;
+  letter-spacing: 5%;
+  text-align: left;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-modal__input {
+  border-radius: 6px;
+  background: rgb(244, 242, 255);
+  max-width: 250px;
+  min-height: 40px;
+  border: none;
+  margin-top: 5px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 24px;
+}
+
+.flex-container__block-1,
+.flex-container__block-2 {
+  width: 250px;
+  row-gap: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.discount-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.discount-block__checkbox {
+  display: none;
+}
+
+.discount-block__custom-checkbox {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  background-color: rgb(244, 242, 255);
+  cursor: pointer;
+  padding: 5px;
+}
+
+.discount-block__checkbox:checked + .discount-block__custom-checkbox {
+  background-color: rgb(244, 242, 255);
+}
+
+.discount-block__checkbox:checked + .discount-block__custom-checkbox::after {
+  content: "";
+  background-image: url(../img/check.svg);
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+
+.discount-block__input {
+  width: 200px;
+}
+
+.main-modal__textarea {
+  width: 250px;
+  height: 112px;
+  resize: none;
+}
+
+.main-modal__button {
+  width: 250px;
+  height: 39px;
+  border-radius: 6px;
+  background: rgb(109, 91, 208);
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.main-modal__button:hover {
+  background-color: rgba(109, 91, 208, 0.856);
+}
+
+.main-modal__button:active {
+  background-color: rgb(99, 82, 194);
+}
+
+.footer-modal {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 0 29px;
+}

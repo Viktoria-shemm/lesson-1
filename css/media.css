@@ -1,0 +1,149 @@
+@media (max-width: 780px) {
+  .nav {
+    max-width: 780px;
+    min-height: 130px;
+  }
+
+  .nav__container {
+    flex-direction: column;
+    height: 100px;
+    row-gap: 21px;
+  }
+}
+
+@media (max-width: 565px) {
+  .nav__block {
+    flex-direction: column;
+    row-gap: 15px;
+    align-items: center;
+  }
+
+  .nav__container {
+    height: 161px;
+  }
+}
+
+@media (max-width: 425px) {
+  .nav__search {
+    width: 290px;
+  }
+
+  .nav__container {
+    row-gap: 10px;
+    height: 144px;
+  }
+
+  .nav__block {
+    row-gap: 8px;
+  }
+
+  .header__container {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+}
+
+@media (max-width: 815px) {
+    .modal-window {
+        max-width: 85%;
+    }
+
+    .flex-container {
+        flex-direction: column;
+        column-gap: unset;
+        align-items: center;
+    }
+
+    .main-modal {
+        min-height: unset;
+        height: 685px;
+    }
+
+    .main-modal__form {
+        min-height: unset;
+        height: 629px;
+    }
+}
+
+@media (max-width: 750px) {
+    .footer-modal .price {
+        width: 185px;
+        height: 38px;
+    }
+
+    .footer-modal {
+        padding: unset;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+}
+
+@media (max-width: 610px) {
+    .main-modal__input {
+        max-width: 200px;
+    }
+
+    .discount-block {
+        align-items: unset;
+        flex-direction: column;
+    }
+
+    .discount-block__custom-checkbox {
+        margin-top: 5px;
+    }
+
+    .flex-container {
+        row-gap: 12px;
+    }
+
+    .main-modal {
+        height: 725px;
+    }
+
+    .main-modal__form {
+        height: 669px;
+    }
+
+    .modal-window {
+        padding: 20px 80px;
+    }
+}
+
+@media (max-width: 560px) {
+    .main-modal__button {
+        width: 200px;
+        font-size: 13px;
+    }
+
+    .main-modal {
+        padding: 20px;
+    }
+
+    .header-modal__block {
+        flex-direction: column;
+    }
+
+    .flex-container__block-1, .flex-container__block-2 {
+        width: 200px;
+    }
+
+    .modal-window {
+        padding: 20px 30px;
+    }
+
+    .close {
+        right: 3px;
+        top: 3px;
+    }
+}
+
+@media (max-width: 345px) {
+    .header-modal__title {
+        font-size: 20px;
+    }
+
+    .main-modal {
+        padding: 5px;
+        height: 679px;
+    }
+}
